@@ -3,22 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>kababie</title>
   </head>
   <body>
     <header>
       <!-- main navbar html , coping in other pages -->
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
+        <!-- main logo -->
         <div class="logo"><a href="index.html">kababie</a></div>
-        <ul class="nav-links">
-          <!-- use uppercase in begging of names -->
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <h1 id="hamburger-icon">☰</h1>
+        </div>
+        <!-- DESKTOP links -->
+        <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- MOBILE links -->
+      <div class="ham-menu" id="ham-menu">
+        <ul class="ham-nav-links" id="ham-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
+    <!-- main js -->
+    <script src="/js/navbar.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -1,1 +1,1 @@
-first Html and CSS project , a kabab resturant site
+first Html and CSS project(using a bit of JS) , a kabab resturant site
