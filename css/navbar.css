@@ -1,4 +1,4 @@
-/* border-box makes sizing easier */
+/* Reset margin and padding for all elements + box-sizing */
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +9,7 @@
 /*         Main Navbar CSS       */
 /* ============================= */
 
-/* Navbar container:
-   - Uses flexbox to align items in a row
-   - Aligns logo and nav links
-   - Applies background color and padding */
+/* Sticky and full-width navbar setup */
 .navbar {
   display: flex;
   position: fixed;
@@ -25,10 +22,7 @@
   width: 100%;
   z-index: 999;
 }
-/* Logo styles:
-   - Bold and uppercase text
-   - Removes text decoration
-   - Adds color and transition for hover effect */
+/* Brand logo styles */
 .logo a {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -45,19 +39,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Navigation links container:
-   - Removes list style
-   - Uses flex display with gap between items */
+/* Horizontal nav links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
-/* Navigation link styles:
-   - No underline
-   - Colored and bold
-   - Padding and rounded corners
-   - Transition for smooth hover */
+/* Nav link styles */
 .nav-links a {
   text-decoration: none;
   color: #f48c06;
@@ -67,8 +55,6 @@
   border-radius: 0.5rem;
   font-family: fat;
 }
-/* Hover effect on links:
-   - Applies "fire" animation on hover */
 .nav-links a:hover {
   transition: 0.3s ease;
   animation-name: fire;
@@ -77,10 +63,6 @@
   text-shadow: 0 -1px 5px rgba(255, 186, 8, 0.3), 0 2px 3px #9d0208,
     0 4px 5px rgba(208, 0, 0, 0.5);
 }
-/* Active state on links:
-   - Box shadow effect on click
-   - Stops animation
-   - Changes color */
 .nav-links a:active {
   box-shadow: 0 2px 15px 0 #ffba08, 0 -8px 10px #9d0208, 0 -8px 15px 1px #dc2f02;
   animation: none;
@@ -132,7 +114,7 @@
 /* ========= FOR MOBILE ======== */
 /* ============================= */
 
-/* HAM menu */
+/* Fullscreen mobile menu hidden by default */
 .ham-menu {
   display: flex;
   position: fixed;
@@ -145,9 +127,10 @@
   height: 100vh;
   width: 100%;
   transition: 0.35s ease;
-  top: -200%;
+  top: -200%; /* Moves menu out of view */
   z-index: 10;
 }
+/* Vertical nav links for mobile */
 .ham-nav-links {
   justify-content: center;
   align-items: center;
@@ -176,9 +159,7 @@
     0 4px 5px rgba(208, 0, 0, 0.5);
 }
 
-/* hamburger hidden on desktop
--unselectable
-*/
+/* Hamburger icon (☰ / ✕) behavior */
 #hamburger {
   display: none;
   user-select: none;
@@ -191,19 +172,19 @@
 #hamburger-icon:hover {
   text-shadow: 0px 0px 5px rgba(208, 0, 0, 1);
 }
-/*  for haburger icon animation  */
+/* Fade animation class */
 .fade-out {
   opacity: 0;
 }
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
+    display: none; /* Hide desktop nav */
   }
   .ham-menu.active {
-    top: 0;
+    top: 0; /* Show mobile nav */
   }
   #hamburger {
-    display: flex;
+    display: flex; /* Show hamburger icon */
   }
   .navbar {
     position: fixed;
