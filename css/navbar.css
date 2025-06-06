@@ -1,10 +1,3 @@
-/* Reset margin and padding for all elements + box-sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ============================= */
 /*         Main Navbar CSS       */
 /* ============================= */
@@ -88,25 +81,6 @@
     box-shadow: 0 3px 0 3px #03071e, 0 3px 15px 0 #ffba08, 0 -6px 15px #9d0208,
       0 0px 5px #f48c06;
   }
-}
-
-/* ============================= */
-/*           navbar fonts        */
-/* ============================= */
-
-@font-face {
-  font-family: fat;
-  src: url(/fonts/BungeeSpice-Regular.woff2) format("woff2"),
-    url(/fonts/BungeeSpice-Regular.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: logo;
-  src: url(/fonts/Calistoga-Regular.woff2) format("woff2"),
-    url(/fonts/Calistoga-Regular.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 /* ============================= */

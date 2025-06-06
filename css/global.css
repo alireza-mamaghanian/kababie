@@ -1,0 +1,27 @@
+/* Reset margin and padding for all elements + box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color-scheme: dark light;
+}
+/* ============================= */
+/*           navbar fonts        */
+/* ============================= */
+
+@font-face {
+  font-family: fat;
+  src: url(../fonts/BungeeSpice-Regular.woff2) format("woff2"),
+    url(../fonts/BungeeSpice-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: logo;
+  src: url(../fonts/Calistoga-Regular.woff2) format("woff2"),
+    url(../fonts/Calistoga-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
