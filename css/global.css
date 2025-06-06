@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* dark theme for my eye */
 html {
   color-scheme: dark light;
 }
